@@ -50,8 +50,7 @@ nav ul li a:hover {
   }
 
   nav ul li {
-    margin-right: 2rem;
-   margin-left: 0.7rem;
+    justify-content: space-between;
     font-size: smaller;
   }
 } 
