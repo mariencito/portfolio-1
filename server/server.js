@@ -2,6 +2,8 @@ import express from 'express';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import cors from 'cors';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -9,15 +11,17 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join('index.html')));
+app.use(express.static('dist'));
 
 app.post('/api/contact', (req, res) => {
-  console.log('YESYESYESYESYES', req.body);
   const { name, email, message } = req.body;
 
   const transporter = nodemailer.createTransport({
@@ -46,8 +50,8 @@ app.post('/api/contact', (req, res) => {
   });
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join('index.html'));
+app.get('/', (req, res) => {
+  res.sendFile(join(__dirname, '../index.html'));
 });
 
 app.listen(PORT, () => {
