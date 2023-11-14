@@ -1,0 +1,50 @@
+#github{
+height: 5rem;
+transition: background-color 0.7s;
+}
+
+#github:hover{
+    background-color: #ff6600;
+ }
+
+#linkin{
+height: 5rem;
+transition: background-color 0.7s;
+}
+
+#linkin:hover{
+    background-color: #ff6600;
+ }
+
+
+#twitter{
+height: 5rem;
+transition: background-color 0.7s;
+}
+
+#twitter:hover{
+    background-color: #ff6600;
+ }
+
+
+#footer{
+    width: auto;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #333; 
+    
+} 
+
+
+@media screen and (max-width:600px) {
+    #footer{
+        height: 5rem;
+        margin-top: 5rem;
+    }
+
+}
+
+
+

@@ -1,0 +1,101 @@
+#portfolio {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: auto;
+}
+
+ .slide-in-from-bottom {
+  transform: translateY(0%); /* Starting position, off the screen */
+  opacity: 0; /* Starting opacity, hidden */
+  transition: transform 2s ease, opacity 5s ease;
+}
+
+.slide-in-from-bottom.animated {
+  transform: translateY(-30%); /* Ending position, fully visible */
+  opacity: 1; /* Ending opacity, fully opaque */
+}
+
+.project-container.slide-up {
+  /* Animation state styles */
+  transform: translateY(-100%);
+  opacity: 1;
+} 
+
+#title {
+  color: #ff6600;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.project-container {
+  background-color: #ff6600;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.project h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+#git {
+  height: 10rem;
+  width: auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+#launch{
+  padding: 25px;
+}
+
+#jate{
+  height: 13rem;
+}
+
+
+  @media screen and (max-width: 600px) {
+    .slide-in-from-bottom {
+      transform: translateY(0%); /* Starting position, off the screen */
+      opacity: 0; /* Starting opacity, hidden */
+      transition: transform 2s ease, opacity 7s; /* Add a 2-second delay on mobile */
+    }
+  
+    .slide-in-from-bottom.animated {
+      transform: translateY(0%); /* Ending position, fully visible */
+      opacity: 1; /* Ending opacity, fully opaque */
+    }
+  
+    .project-container.slide-up {
+      /* Animation state styles */
+      transform: translateY(-100%);
+      opacity: 1;
+    }
+
+.project-container {
+  max-width: 270px;
+}
+  }

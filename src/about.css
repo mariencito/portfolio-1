@@ -1,0 +1,59 @@
+.about {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  transition: transform 3s ease, opacity 1s ease; /* Added transition properties */
+  transform: translateY(0); /* Initial position */
+  opacity: 1; /* Initial opacity */
+}
+
+.about.slide-up {
+  transform: translateY(-100%); /* Slide up */
+  opacity: 0; /* Fade out */
+}
+
+#about-me {
+  text-align: center;
+  margin: 5rem auto;
+  margin-bottom: 1rem;
+  color: #ff6600;
+  font-size: 4rem;
+}
+
+.about-text {
+  text-align: center;
+  align-items: center;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+}
+
+#marien {
+  height: 20rem;
+  width: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  #marien{
+    height: 15rem;
+    margin: 0rem;
+    
+  }
+
+  #about-me{
+    margin: 2rem auto;
+    margin-top: 3rem;
+  }
+
+}
