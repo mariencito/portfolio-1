@@ -88,7 +88,7 @@ function Contact() {
 
   const sendFormDataToServer = async (formData) => {
     // Use fetch or Axios to make a request to your server
-    const response = await fetch('http://localhost:3001/api/contact', {
+    const response = await fetch('https://mariens-portfolio1-47f1788db13d.herokuapp.com/api/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
