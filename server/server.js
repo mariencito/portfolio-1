@@ -14,6 +14,8 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(path.join('index.html')));
+
 app.post('/api/contact', (req, res) => {
   console.log('YESYESYESYESYES', req.body);
   const { name, email, message } = req.body;
@@ -42,6 +44,10 @@ app.post('/api/contact', (req, res) => {
       res.status(200).send('Email sent successfully');
     }
   });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join('index.html'));
 });
 
 app.listen(PORT, () => {
