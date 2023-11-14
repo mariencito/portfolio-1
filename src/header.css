@@ -49,8 +49,17 @@ nav ul li a:hover {
     display: none;
   }
 
+  nav ul{
+    justify-content: center;
+    text-align: center;
+    margin-left: 3rem;
+  }
+
   nav ul li {
-    justify-content: space-between;
+    
     font-size: smaller;
+    text-align: center;
+    display: flex;
+    
   }
 } 
