@@ -26,7 +26,7 @@ function About() {
   return (
     <div className={`about ${animateAboutMe ? 'slide-up' : ''}`}>
       <h1 id="about-me">About Me</h1>
-      <img id="marien" src="marien.PNG" alt="Marien Castellanos" />
+      <img id="marien" src="marien.jpeg" alt="Marien Castellanos" />
       <div className="about-text">
         <h2>"A UI is like a good joke. If you have to explain it, it's not that good."</h2>
         <p>

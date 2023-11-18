@@ -14,7 +14,7 @@
 }
 
 .slide-in-from-bottom.animated {
-  transform: translateY(-30%); /* Ending position, fully visible */
+  transform: translateY(-20%); /* Ending position, fully visible */
   opacity: 1; /* Ending opacity, fully opaque */
 }
 
