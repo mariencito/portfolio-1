@@ -31,14 +31,14 @@ function Portfolio() {
         <div className="project-container" id="pawgress">
           <h2>Pawgress</h2>
           <h3>This is a social media site for dogs!</h3>
-          <a href="https://github.com/TheRealMi/Pawgress"><img id="git" src="github.png"></img></a>
-          <a href="https://pawgress-263620beafdd.herokuapp.com/"><img id="git" src="doggo.png"></img></a>
+          <a href="https://github.com/mariencito/pawgress1"><img id="git" src="github.png"></img></a>
+          <a href="https://pawgress1-64f30b8d2b8e.herokuapp.com/"><img id="git" src="doggo.png"></img></a>
         </div>
         <div className="project-container" id="sports-quiz">
           <h2>Sports Quiz</h2>
           <h3>This is a sports quiz using an API to generate the questions!</h3>
-          <a href="https://github.com/AmbitiousFlo/Sports-Trivia"><img id="git" src="github.png"></img></a>
-          <a href="https://ambitiousflo.github.io/Sports-Trivia/"><img id="launch" src="trivia.png"></img></a>
+          <a href="https://github.com/mariencito/Sports-Quiz"><img id="git" src="github.png"></img></a>
+          <a href="https://mariencito.github.io/Sports-Quiz/"><img id="launch" src="trivia.png"></img></a>
         </div>
         <div className="project-container" id="JATE">
           <h2>Just Another Text Editor</h2>
