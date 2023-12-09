@@ -13,7 +13,7 @@ function Header() {
           <li><a href="#about">About Me</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="https://drive.google.com/file/d/1J2h0SK9jItp-v-TNPXizZ7fZdNKN8Owy/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a href="https://drive.google.com/file/d/1nCb28ENPuj7IHCDXUnqitaplUqz7VAE-/view" target="_blank">Resume</a></li>
         </ul>
       </nav>
     </header>
